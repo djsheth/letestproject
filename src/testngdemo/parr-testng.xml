@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="parrSuite" parallel="classes">
+  <test thread-count="3" name="parrTest" parallel="classes">
+  <parameter name="browser" value="chrome"></parameter>
+  <classes>
+  <class name="testngdemo.NewTest1"/>
+    <class name="testngdemo.NewTest2"/>
+    <class name="testngdemo.NewTest3"/>
+  </classes>
+  </test> <!-- parrTest -->
+</suite> <!-- parrSuite -->

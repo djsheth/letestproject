@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="5" name="ParallelClassesSuite" parallel="classes">
+  <test thread-count="5" name="ParallelClassesTest" parallel="classes">
+  <parameter name="browserName" value="chrome"></parameter>
+    <classes>
+      <class name="testngdemo.CheckboxCountTest"/>
+      <class name="testngdemo.DynamicGoogleSearchTest"/>
+      <class name="testngdemo.MultiBrowserRunningTest"/>
+    </classes>
+  </test> <!-- ParallelClassesTest -->
+</suite> <!-- ParallelClassesSuite -->

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [parrSuite]">
+  <test name="parrTest(failed)" parallel="classes">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="testngdemo.NewTest1">
+        <methods>
+          <include name="beforeGoogle"/>
+          <include name="AfterClass"/>
+          <include name="googleFirst"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- testngdemo.NewTest1 -->
+      <class name="testngdemo.NewTest2">
+        <methods>
+          <include name="beforeGoogle"/>
+          <include name="beforeClass"/>
+          <include name="AfterClass"/>
+          <include name="linked"/>
+        </methods>
+      </class> <!-- testngdemo.NewTest2 -->
+      <class name="testngdemo.NewTest3">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeGoogle"/>
+          <include name="rediff"/>
+          <include name="AfterClass"/>
+        </methods>
+      </class> <!-- testngdemo.NewTest3 -->
+    </classes>
+  </test> <!-- parrTest(failed) -->
+</suite> <!-- Failed suite [parrSuite] -->

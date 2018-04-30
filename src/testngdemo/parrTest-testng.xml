@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="5" name="parrtestSuite" parallel="tests">
+
+	<test name="parrtestTest1">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="testngdemo.NewTest1" />
+			<class name="testngdemo.NewTest2" />
+			<class name="testngdemo.NewTest3" />
+		</classes>
+	</test> <!-- parrtestTest -->
+
+	<test name="parrtestTest2">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="testngdemo.NewTest1" />
+			<class name="testngdemo.NewTest2" />
+			<class name="testngdemo.NewTest3" />
+		</classes>
+	</test> <!-- parrtestTest -->
+
+	<test name="parrtestTest3">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="testngdemo.NewTest1" />
+			<class name="testngdemo.NewTest2" />
+			<class name="testngdemo.NewTest3" />
+		</classes>
+	</test> <!-- parrtestTest -->
+
+</suite> <!-- parrtestSuite -->
